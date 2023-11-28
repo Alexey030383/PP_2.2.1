@@ -22,7 +22,6 @@ public class User {
 
     @MapsId
     @OneToOne
-    @JoinColumn(name = "car_id")
     private Car car;
 
     public User() {
