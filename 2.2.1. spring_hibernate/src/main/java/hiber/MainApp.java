@@ -22,6 +22,7 @@ public class MainApp {
         User Maxim = new User("Maxim", "Baryshev", "max@ mail.ru");
         User Anastasia = new User("Anastasia", "Barysheva", "nast@mail.ru");
 
+
         Car Toyota = new Car("Toyota", 70);
         Car Audi = new Car("Audi", 3);
         Car Porsche = new Car("Porsche", 911);

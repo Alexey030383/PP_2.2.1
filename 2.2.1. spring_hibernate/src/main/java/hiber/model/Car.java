@@ -66,17 +66,20 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return series == car.series && Objects.equals(id, car.id) &&
-                Objects.equals(model, car.model) && Objects.equals(user, car.user);
+        return series == car.series && Objects.equals(id, car.id) && Objects.equals(model, car.model);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, model, series, user);
+        return Objects.hash(id, model, series);
     }
 
     @Override
     public String toString() {
-        return "Car model = " + model + " series = " + series + "\n";
+        return "Car {" +
+                "id=" + id +
+                ", model='" + model + '\'' +
+                ", series=" + series +
+                '}';
     }
 }
